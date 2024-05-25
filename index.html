@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+   
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./images/road.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#car {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: green;
+    left: 20%;
+}
+
+.red {
+    background-color: red;
+    left: 40%;
+}
+      
+        
+        
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div id="car"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/9aefe1ea-3ae7-441d-82c6-d2dece81c583/YVsctWq2tH.json" background="transparent" speed="1" style="width: 300px; height: 300px;"  autoplay></dotlottie-player></div>
+        <button id="startBtn" class="button green">Start</button>
+        <button id="stopBtn" class="button red">Stop</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
